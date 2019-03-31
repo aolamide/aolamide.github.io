@@ -1,0 +1,226 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	color: #5518ab;
+	box-sizing: border-box;
+}
+a:hover{
+	cursor: pointer;
+}
+/*NAVBAR STARTS*/
+nav{
+	position: fixed;
+	top:0;
+	width: 100%;
+	background-color: white;
+	overflow: hidden;
+	text-align: center;
+	font-family: 'Coiny', cursive;
+	z-index: 20;
+}
+nav a{
+	text-decoration: none;
+	padding: 15px 25px;	
+}	
+.navbar a{
+	float: left;
+}
+.navbar .right{
+	display: block;
+	float: right;
+}
+.navbar .right a:hover{
+	background-color: white;
+	border-bottom: 2px solid blue ;
+}
+.navbar .icon{
+	display: none;
+}
+.newNav{
+	border-bottom: 2px solid #2222ff; 
+}
+.navbarDrop{
+	border-bottom: 1px solid blue;
+}
+.navbarDrop .icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.navbarDrop a{
+	display: block;
+	text-align: left;
+}
+.navbarDrop .right a:hover{
+	background-color:blue; 
+}
+.nav-header{
+	font-weight: 900;
+	font-size: 24px;
+	height: 26px;
+}
+.nav-header:first-letter{
+	font-family: 'Lobster', cursive;
+}
+/*NAVBAR ENDS*/
+.welcome-section{
+	margin-top: 40px;
+	min-height: calc(100vh - 56px);
+	/*display: grid;
+	grid-template-columns: 1fr 2fr;*/
+	/*align-items: center;*/
+	padding: 15px;
+}
+
+.h-img{
+	width: 320px;
+	height: 320px;
+	border-radius: 50%;
+}
+.sc-1, .sc-2{
+	margin-right: auto;
+	margin-left: auto;
+	width: auto;
+	max-width: 300px;
+	text-align: center;
+}
+.sc-1{
+	margin-top: 15vh;
+}
+.sc-2 > h1{
+	font-size: 1.5em;
+}
+.animation{
+	transition: all 3s;
+}
+.from-left{
+	transform: translateX(-1000px);
+}
+.from-right{
+	transform: translateX(1000px);
+}
+.social-link{
+	padding-right: 5px;
+	z-index: 1;
+	position: relative;
+	color: #5518aa;
+}
+canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	vertical-align: top;
+	z-index: -1;
+} 
+#particles-js {
+	width: 100%;
+	height: 100%;
+}
+
+/* ABOUT */
+.about-section{
+	background-color: white;
+	min-height: 100vh;
+}
+.about-section h1{
+	text-align: center;
+	letter-spacing: 10px;
+	font-size: 5vw;
+}
+.about-container{
+	display: flex;
+	padding: 10px;
+	width: 90vw;
+	margin: auto;
+}
+.about-text{
+	padding: 5px;
+	font-size: 1.5rem;
+	padding-left: 50px;
+}
+.prog-container{
+	display: flex;
+}
+.progress{
+	background-color: burlywood;
+	/* margin: auto; */
+	height: 30px;
+	margin-bottom: 10px;
+	width: 80vw;
+	/* display: flex; */
+	border-radius: 16px;
+	margin-bottom: 40px;
+}
+#skills{
+	width: 80vw;
+	margin: auto;
+}
+#skills p{
+	text-align: center;
+	font-family: "ubuntu", sans-serif;
+	font-weight: bolder;
+	font-size: 1.5rem;
+}
+.p90{
+	width: 90%;
+}
+.p75{
+	width: 75%;
+}
+.p60{
+	width: 60%;
+}
+.p40{
+	width: 40%;
+}
+.p-bar{
+	background-color: #5518aa;
+	height: 30px;
+	/* animation: html 1s linear 1.5s forwards; */
+	width: 0%;
+	border-radius: 16px;
+	text-align: center;
+	color: white;
+}
+.skill-img{
+	height: 40px;
+	width: 50px;
+	background-color: white;
+	padding-right: 8px;
+}
+
+@keyframes html{
+	0%{width: 0%;}
+	50%{width: 50%} 
+	100%{width: 100%}
+}
+/*MEDIA QUERIES*/
+/* When the screen is less than 600 pixels wide, hide all links and show the icon that triggers the drop-down menu*/
+@media screen and (max-width: 600px) {
+  .navbar .right{
+  	display: none;
+  }
+  .navbar .icon{
+    display: block;
+    float: right;
+  }
+  .navbar a:hover{
+	border: none;
+  }
+}
+@media screen and (max-width: 850px){
+	.about-container{
+		display: block;
+	}
+	.about-container img{
+		margin: 0 auto;
+	}
+	.about-text{
+		padding : 10px;
+		font-size: 16px;
+	}
+	.p-bar, .progress{
+		height: 20px;
+	}
+}
