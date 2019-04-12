@@ -67,9 +67,6 @@ nav a{
 .welcome-section{
 	margin-top: 40px;
 	min-height: calc(100vh - 56px);
-	/*display: grid;
-	grid-template-columns: 1fr 2fr;*/
-	/*align-items: center;*/
 	padding: 15px;
 }
 
@@ -188,6 +185,86 @@ canvas {
 	width: 50px;
 	background-color: white;
 	padding-right: 8px;
+}
+/* CONTACT SECTION */
+.contact-section{
+	padding: 25px;
+	min-height : 90vh;
+	margin-top: 50px;
+}
+.contact-section h2{
+	text-align: center;
+	font-size: 2rem;
+}
+#validation{
+	text-align: center;
+}
+.form-group{
+	box-sizing: border-box;
+	margin-bottom: 25px;
+}
+.form{
+	display: flex;
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+.f1{
+	width: 30%;
+	margin: 5px;
+	box-sizing: border-box;
+}
+.f2{
+	width: 70%;
+	margin: 5px;
+	box-sizing: border-box;
+}
+label{
+	font-weight: bolder;
+}
+.input {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+button#submit{
+	padding: 12px;
+	border-radius: 8px;
+	width: inherit;
+	font-weight: bold;
+	background-color: #5518aa;
+	color: #fff;
+}
+.submit{
+	margin: auto;
+	width: 100px;
+}
+button{
+	outline: none;
+}
+button:hover{
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+	.form{
+		display: block;
+	}
+	.f1, .f2{
+		width: 100%;
+	}
 }
 
 @keyframes html{
