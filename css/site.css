@@ -79,7 +79,6 @@ nav a{
 	margin-right: auto;
 	margin-left: auto;
 	width: auto;
-	/* max-width: 300px; */
 	text-align: center;
 }
 .sc-1{
@@ -141,11 +140,9 @@ canvas {
 }
 .progress{
 	background-color: burlywood;
-	/* margin: auto; */
 	height: 30px;
 	margin-bottom: 10px;
 	width: 80vw;
-	/* display: flex; */
 	border-radius: 16px;
 	margin-bottom: 40px;
 }
@@ -174,7 +171,6 @@ canvas {
 .p-bar{
 	background-color: #5518aa;
 	height: 30px;
-	/* animation: html 1s linear 1.5s forwards; */
 	width: 0%;
 	border-radius: 16px;
 	text-align: center;
@@ -267,12 +263,51 @@ button:hover{
 	}
 }
 
-@keyframes html{
+@keyframes progress{
 	0%{width: 0%;}
 	50%{width: 50%} 
 	100%{width: 100%}
 }
+
+/* FOOTER */
+.footer{
+	border-top: 4px solid blanchedalmond;
+}
+.main-footer{
+	text-align: center;
+}
+.copyright{
+	font-style: italic;
+	padding: 2px 12px;
+	background-color: blanchedalmond;
+	font-weight: bold;
+}
+.contacts{
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+}
+.contacts div{
+	padding: 8px;
+}
+.contacts i{
+	padding: 4px;
+}
+.footer a {
+	margin: 0 5px;
+}
 /*MEDIA QUERIES*/
+@media screen and (max-width:860px){
+	.contacts{
+		font-size: 1.2rem;
+	}
+}
+@media screen and (max-width:712px){
+	.contacts{
+		display: block;
+		text-align: center;
+	}
+}
 /* When the screen is less than 600 pixels wide, hide all links and show the icon that triggers the drop-down menu*/
 @media screen and (max-width: 600px) {
   .navbar .right{
