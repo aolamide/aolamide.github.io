@@ -79,7 +79,7 @@ nav a{
 	margin-right: auto;
 	margin-left: auto;
 	width: auto;
-	max-width: 300px;
+	/* max-width: 300px; */
 	text-align: center;
 }
 .sc-1{
