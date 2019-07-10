@@ -14,23 +14,24 @@ const changeNavbar = () => {
 window.onscroll = changeNavbar;
 
 const toggleNav = () => {
- 
-  if (x.className === "navbar") {
-  	x.classList.remove("navbar");
-    x.className = "navbarDrop";
-    tog_icon.classList.add("fa-times");
-  } else {
-    x.className = "navbar";
-    tog_icon.classList.remove("fa-times");
-  }
+  x.classList.toggle("navbarDrop");
+  x.classList.toggle("navbar");
+  tog_icon.classList.toggle("fa-times");
 }
 const resize = () => {
 	if(window.innerWidth >= 600){
-		x.className = "navbar";
+    x.className = "navbar";
+    tog_icon.classList.remove("fa-times");
 	}
 }
 window.onresize = resize;
 navButton.addEventListener("click", toggleNav);
+//close dropdown when link is clicked on mobile
+function closeNav() {
+  if(x.classList.contains("navbarDrop")){
+    toggleNav();
+  }
+}
 //NAVBAR ABOVE
 const body = document.getElementById("body");
 const myName = document.getElementById("myName");
