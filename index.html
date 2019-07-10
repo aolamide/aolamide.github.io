@@ -22,9 +22,10 @@
 	<nav class="navbar" id="navbar">
 		<a class="left nav-header" href="#navbar">OLAMIDE</a>
 		<div class="right">
-			<a href="#home">Home</a>
-			<a href="#about">About</a>
-			<a href="#contact">Contact Me</a>
+			<a onClick="closeNav()" href="#home">Home</a>
+			<a onClick="closeNav()" href="#about">About</a>
+			<a onClick="closeNav()" href="#works">Works</a>
+			<a onClick="closeNav()" href="#contact">Contact Me</a>
 		</div>
 		<a class="icon" id="toggleNav" href="javascript:void(0)"><i id="toggle-icon" class="fa fa-bars"></i></a>
 	</nav>
@@ -34,13 +35,13 @@
 			<img class="h-img" src="img/bg.jpg" alt="mypic">
 		</div>
 		<div class="sc-2">
-			<h1 class="animation from-left" id="myName">Hey I'm Olamide</h1>
+			<h1 class="animation from-left" id="myName">Hey I'm Olamide Aboyeji</h1>
 			<p class="animation from-right" id="myTitle">Programmer, Web Developer</p>
-			<p id="socials" class="animation from-right ">
+			<p id="socials" class="animation from-left ">
 				<a href="https://linkedin.com/in/aolamide" target="_blank"><i class="social-link fab fa-2x fa-linkedin"></i></a>
-				<a href="https://instagram.com/aboyejiolamide" target="_blank"><i class="social-link fab fa-2x fa-instagram"></i></a>
+				<a href="https://twitter.com/olamideaboyeji" target="_blank"><i class="social-link fab fa-2x fa-twitter"></i></a>
 				<a href="https://github.com/aolamide" target="_blank"><i class="social-link fab fa-2x fa-github"></i></a>
-				<a href="mailto:admin@aolamide.me" target="_blank"><i class="social-link fa fa-2x fa-envelope"></i></a>
+				<a href="mailto:admin@aolamide.me"><i class="social-link fa fa-2x fa-envelope"></i></a>
 			</p>
 		</div>
 	</section>
@@ -48,9 +49,15 @@
 		<h1>Who's This  Guy ?</h1>
 		<div class="about-container">
 			<img src="img/bg.jpg" width="300" height="300" alt="Olamide Aboyeji">
-			<div class="about-text">
-				*clears throat* <br> 
-				My name is <strong>Aboyeji Olamide</strong>, a Web Developer and Engineering Student. Lover of the web. I specialize mainly in FrontEnd Web Development but also have a thing for BackEnd development. You can trust me to bring that your dream website to reality <span style="font-size: 1.5rem">&#128521;</span><br> I'm about also passionate about Sustainable Development Goals 1 & 2 (No Poverty and Zero Hunger) and willing to donate my time to help achieve these. <br> <br> Favorite Food? Lover of all types of food <br> Favorite Sport? Football (Manchester United) <br>  
+			<div class="about-text">  
+				<p>*clears throat*</p>
+				<p>
+					I'm currently studying Electrical/Electronics Engineering at University of Lagos, Akoka and when I am not doing Engineering works, I code. I am a front end developer, although aspiring to be a full stack developer.
+				</p>
+				<p>
+					I like to play games, watch football (Manchester United <span style="font-size:1.5rem">&#128527;</span>), watch movies(well, not really), meet people, volunteer and coding(definitely!<span style="font-size: 1.5rem">&#128521;</span>)
+				</p>
+				<p>Have an idea you want me to work on? Leave a message for me in the contact form at the bottom of the page.</p>
 			</div>	
 		</div>
 		<div id="skills">
@@ -97,6 +104,50 @@
 			</div>
 		</div>
 	</section>
+	<section id="works" class="works">
+		<p>MY WORKS</p>
+		<div class="work">
+			<a href="https://aolamide.github.io/movie-search-app" target="_blank">
+				<img src="img/works/movie-app.PNG" alt="movie app" class="work-image">
+				<h2 class="work-title">MOVIE SEARCH APP</h2>
+				<p class="work-description">I made this app with ReactJS. Using the Fetch API, it allows you to search and read about movies.</p>
+			</a>
+			<p><a href="https://github.com/aolamide/movie-search-app" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
+		</div>
+		<div class="work">
+			<a href="" target="_blank">
+				<img src="img/works/personal-site.PNG" alt="personal site" class="work-image">
+				<h2 class="work-title">PERSONAL WEBSITE</h2>
+				<p class="work-description">I made this personal website from scratch with HTML, CSS and Vanilla JavaScipt. The contact form is powered by NodeJS and uses Nodemailer to send automatic confirmation mails.
+				</p>
+			</a>
+			<p><a href="https://github.com/aolamide/number-game" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
+		</div>
+		<div class="work">
+			<a href="https://aolamide.github.io/number-game" target="_blank">
+				<img src="img/works/number-game.PNG" alt="number-game" class="work-image">
+				<h2 class="work-title">NUMBER GAME</h2>
+				<p class="work-description">Number Game (or Dead and Wounded) is a game I created with vanilla JavaScipt. Can you guess correctly the Computer's Number?</p>
+			</a>
+			<p><a href="https://github.com/aolamide/number-game" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
+		</div>
+		<div class="work">
+			<a href="https://aolamide.github.io/basic-html-tags" target="_blank">
+				<img src="img/works/html-tags.PNG" alt="html-tags" class="work-image">
+				<h2 class="work-title">BASIC HTML TAGS</h2>
+				<p class="work-description">Website I made with just HTML and CSS showcasing ten basic HTML tags and examples on how to use them. </p>
+			</a>
+			<p><a href="https://github.com/aolamide/basic-html-tags" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
+		</div>
+		<div class="work">
+			<a href="https://aolamide.github.io/number-trivia" target="_blank">
+				<img src="img/works/number-trivia.PNG" alt="number-trivia" class="work-image">
+				<h2 class="work-title">NUMBER TRIVIA</h2>
+				<p class="work-description">Made with ReactJS. Type any number and get a random fact about it!</p>
+			</a>
+			<p><a href="https://github.com/aolamide/number-trivia" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
+		</div>
+	</section>
 	<section id="contact" class="contact-section">
 		<h2>Let's Talk</h2>
 		<div class="form">
@@ -118,7 +169,7 @@
 			</div>
 		</div>
 		<div class="submit">
-			<button id="submit"> SEND <i class="fas fa-paper-plane"></i></button>
+			 <button id="submit"> SEND <i class="fas fa-paper-plane"></i></button> 
 		</div>	
 		<p id="validation"></p>	
 	</section>

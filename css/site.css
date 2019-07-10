@@ -8,6 +8,10 @@ body, html{
 a:hover{
 	cursor: pointer;
 }
+a{
+	text-decoration: none;
+	color: inherit
+}
 /*NAVBAR STARTS*/
 nav{
 	position: fixed;
@@ -116,7 +120,7 @@ canvas {
 
 /* ABOUT */
 .about-section{
-	background-color: white;
+	/* background-color: white; */
 	min-height: 100vh;
 }
 .about-section h1{
@@ -150,7 +154,7 @@ canvas {
 	width: 80vw;
 	margin: auto;
 }
-#skills p{
+#skills p, #works > p{
 	text-align: center;
 	font-family: "ubuntu", sans-serif;
 	font-weight: bolder;
@@ -181,6 +185,54 @@ canvas {
 	width: 50px;
 	background-color: white;
 	padding-right: 8px;
+}
+/* WORKS */
+.works{
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 95vh;
+	margin: 50px;
+	justify-content: center;
+	color: white;
+}
+.work{
+	border-radius: 10px;
+	width: 300px;
+	margin: 18px;
+	background-color: #424b80;
+	color:#c6c8dc;
+}
+.work:hover{
+	transform: scale(1.02);
+}
+.work h2{
+	padding: 8px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.work p{
+	padding: 10px;
+}
+.work > p a:hover{
+	color: navajowhite;
+}
+#works > p{
+	width: 100%;
+	color: #5518ab;
+	margin: 10px;
+}
+.work-image{
+	width: 100%;
+	height: 220px;
+	border-radius: 10px 10px 0 0;
+}
+@media screen and (max-width : 590px){
+	.works{
+		display: block;
+	}
+	.work{
+		width: 100%;
+		margin: 18px auto;
+	}
 }
 /* CONTACT SECTION */
 .contact-section{
@@ -253,7 +305,26 @@ button{
 button:hover{
 	cursor: pointer;
 }
-
+.loader {
+	border: 8px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 8px solid orange;
+	width: 10px;
+	height: 10px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+	margin: 0 auto;
+  }
+  
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
 @media screen and (max-width: 768px){
 	.form{
 		display: block;
