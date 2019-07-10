@@ -18,6 +18,8 @@ function formSubmission(){
         validation.innerText = "Please fill all fields and make sure a correct email is entered";
         return;
     }
+    submit.innerHTML = "<div class='loader'></div>";
+    submit.disabled = true;
     fetch("https://site-server.herokuapp.com/send", {
         method: 'post',
         headers: {'Content-Type' : 'application/json'},
@@ -32,6 +34,8 @@ function formSubmission(){
         validation.innerText = result;
     })
     .then(() => {
+        submit.innerHTML = 'SEND <i class="fas fa-paper-plane"></i>';
+        submit.disabled = false;
         nameInput.value = "";
         emailInput.value = "";
         messageInput.value = "" 
