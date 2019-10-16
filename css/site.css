@@ -4,6 +4,7 @@ body, html{
 	overflow-x: hidden;
 	color: #5518ab;
 	box-sizing: border-box;
+	scroll-behavior : smooth;
 }
 a:hover{
 	cursor: pointer;
