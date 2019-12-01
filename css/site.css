@@ -5,6 +5,10 @@ body, html{
 	color: #5518ab;
 	box-sizing: border-box;
 	scroll-behavior : smooth;
+	font-family : 'Josefin Sans'
+}
+textarea, input, button {
+font-family: inherit;
 }
 a:hover{
 	cursor: pointer;
@@ -21,7 +25,6 @@ nav{
 	background-color: white;
 	overflow: hidden;
 	text-align: center;
-	font-family: 'Coiny', cursive;
 	z-index: 20;
 }
 nav a{
@@ -36,8 +39,7 @@ nav a{
 	float: right;
 }
 .navbar .right a:hover{
-	background-color: white;
-	border-bottom: 2px solid blue ;
+	text-shadow : 2px 2px 2px grey;
 }
 .navbar .icon{
 	display: none;
@@ -157,7 +159,7 @@ canvas {
 }
 #skills p, #works > p{
 	text-align: center;
-	font-family: "ubuntu", sans-serif;
+	/* font-family: "ubuntu", sans-serif; */
 	font-weight: bolder;
 	font-size: 1.5rem;
 }
@@ -166,6 +168,9 @@ canvas {
 }
 .p75{
 	width: 75%;
+}
+.p65 {
+	width : 65%;
 }
 .p60{
 	width: 60%;
@@ -208,7 +213,7 @@ canvas {
 }
 .work h2{
 	padding: 8px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+	/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
 }
 .work p{
 	padding: 10px;
