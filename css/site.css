@@ -207,6 +207,7 @@ canvas {
 	margin: 18px;
 	background-color: #424b80;
 	color:#c6c8dc;
+	box-shadow: 2px 2px 2px #777, -2px -2px 2px #777;
 }
 .work:hover{
 	transform: scale(1.02);
