@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138736741-1"></script>
 	<script>
@@ -18,7 +19,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Coiny|Lobster" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<title>Aboyeji Olamide</title>
-	<script src="js/particles.js"></script>
 </head>
 <body id="body">
 	<nav class="navbar" id="navbar">
@@ -29,12 +29,18 @@
 			<a onClick="closeNav()" href="#works">/works</a>
 			<a onClick="closeNav()" href="#contact">/contact me</a>
 		</div>
+		<button class="theme-btn dark-btn" title="Dark Mode">
+			<img src="img/moon.svg" alt="switch to light mode">
+		</button>
+		<button class="theme-btn light-btn" title="Light Mode">
+			<img src="img/sun.svg" alt="siwtch to dark mode">
+		</button>
 		<a class="icon" id="toggleNav" href="javascript:void(0)"><i id="toggle-icon" class="fa fa-bars"></i></a>
 	</nav>
 	<section id="home" class="welcome-section">
 		<div id="particles-js"></div>
 		<div class="sc-1">
-			<img class="h-img" src="img/bg.jpg" alt="Olamide Aboyeji">
+			<img class="h-img" src="img/header.png" alt="Olamide Aboyeji">
 		</div>
 		<div class="sc-2">
 			<h1 class="animation from-left" id="myName">Hey I'm Olamide Aboyeji</h1>
@@ -48,63 +54,60 @@
 		</div>
 	</section>
 	<section id="about" class="about-section">
-		<h1>Who's This  Guy ?</h1>
+		<p>WHO'S THIS GUY ?</p>
 		<div class="about-container">
-			<img src="img/bg.jpg" width="300" height="300" alt="Olamide Aboyeji">
 			<div class="about-text">  
 				<p>*clears throat*</p>
 				<p>
-					I'm currently studying Electrical/Electronics Engineering at University of Lagos, Akoka and when I am not busy studying Engineering stuffs, I code. I am a front end developer, although aspiring to be a full stack developer.
+					I am currently a third year undergraduate at the University of Lagos, Nigeria with a major in Electrical & Electronics Engineering. When I am not busy studying Engineering stuffs, I code. I am a full stack web developer working with technologies such as HTML, CSS, Javascript - React, Node.js, Express, NoSQL and SQL databases.
 				</p>
 				<p>
 					I like to play games, watch football (Manchester United <span style="font-size:1.5rem">&#128527;</span>), watch movies(well, not really), meet people, volunteer and coding(too!<span style="font-size: 1.5rem">&#128521;</span>)
 				</p>
-				<p>Have an idea you want me to work on? Leave a message for me in the contact form at the bottom of the page.</p>
+				<p>I am currently open to opportunities in the web development field. Have an idea you want me to work on? Leave a message for me in the contact form at the bottom of the page.</p>
 			</div>	
 		</div>
 		<div id="skills">
 			<p>MY SKILLS</p>
-			<div class="prog-container">
-				<img src="img/skills/html.png" class="skill-img" alt="html">
-				<div class="progress">
-					<div class="p90 cont">
-						<div class="p-bar">HTML</div>
-					</div>
+			<p>Some technologies I work with</p>
+			<div class="skills">
+				<div class="skill">
+					<img src="img/skills/html.svg" alt="html">
+					<span class="skill-text">HTML5</span>
+				</div>
+				<div class="skill">
+					<img src="img/skills/css.svg" alt="css">
+					<span class="skill-text">CSS3</span>
+				</div>
+				<div class="skill">
+					<img src="img/skills/js.svg" alt="javascript">
+					<span class="skill-text">Javascript</span>
+				</div>
+				<div class="skill">
+					<img src="img/skills/react.svg" alt="react">
+					<span class="skill-text">React</span>
+				</div>
+				<div class="skill">
+					<img src="img/skills/node.svg" alt="nodejs">
+					<span class="skill-text">NodeJS</span>
+				</div>
+				<div class="skill">
+					<img src="img/skills/mongo.svg" alt="mongodb">
+					<span class="skill-text">MongoDB</span>
+				</div>
+				<div class="skill">
+					<img src="img/skills/github.svg" alt="github">
+					<span class="skill-text">Git/GitHub</span>
+				</div>
+				<div class="skill">
+					<img src="img/skills/azure.svg" alt="azure">
+					<span class="skill-text">Azure</span>
+				</div>
+				<div class="skill">
+					<img src="img/skills/heroku.svg" alt="heroku">
+					<span class="skill-text">Heroku</span>
 				</div>
 			</div>
-			<div class="prog-container">
-				<img src="img/skills/css.png" class="skill-img" alt="css">
-				<div class="progress">
-					<div class="p90">
-						<div class="p-bar">CSS</div>
-					</div>
-				</div>
-			</div>
-			<div class="prog-container">
-				<img src="img/skills/js.png" class="skill-img" alt="javascript">
-				<div class="progress">
-					<div class="p75">
-						<div class="p-bar">JavaScipt</div>
-					</div>
-				</div>
-			</div>
-			<div class="prog-container">
-				<img src="img/skills/react.png" class="skill-img" alt="reactjs">
-				<div class="progress">
-					<div class="p65">
-						<div class="p-bar">ReactJS</div>
-					</div>				
-				</div>
-			</div>
-			<div class="prog-container">
-				<img src="img/skills/node.png" class="skill-img" alt="nodejs">
-				<div class="progress">
-					<div class="p65">
-						<div class="p-bar">NodeJS</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
 	<section id="works" class="works">
 		<p>WHAT HAVE I BUILT?</p>
@@ -112,15 +115,15 @@
 			<a href="https://quizza.live">
 				<img src="img/works/quizza.PNG" alt="quizza" class="work-image">
 				<h2 class="work-title">Quizza</h2>
-				<p class="work-description">A web application that enables users sign up, create multiple choice quizzes - share links to friends. Plus a live lederboard. It was built with MongoDB, Express, React amd Node</p>
+				<p class="work-description">A web application that enables users sign up, create multiple choice quizzes - share links to friends. Plus a live lederboard. It was built with MongoDB, Express, React and Node. Server powered by Heroku.</p>
 			</a>
-			<p><a href="#" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
+			<p><a href="https://github.com/aolamide/quiz-app" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
 		</div>
 		<div class="work">
 			<a href="https://rdre.me" target="_blank">
-				<img src="img/works/butly.PNG" alt="rdre" class="work-image">
+				<img src="img/works/rdre.PNG" alt="rdre" class="work-image">
 				<h2 class="work-title">rdre.me</h2>
-				<p class="work-description">A simple URL shortening app built with NodeJS and MongoDB.</p>
+				<p class="work-description">A URL shortening service built with NodeJS and MongoDB. Powered by Azure.</p>
 			</a>
 			<p><a href="https://github.com/aolamide/url-shortener" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
 		</div>
@@ -128,24 +131,33 @@
 			<a href="https://aolamide.github.io/movie-search-app" target="_blank">
 				<img src="img/works/movie-app.PNG" alt="movie app" class="work-image">
 				<h2 class="work-title">MOVIE SEARCH APP</h2>
-				<p class="work-description">I made this app with ReactJS. Using the Fetch API, it allows you to search and read about movies.</p>
+				<p class="work-description">I made this app with ReactJS. Using the Fetch API, it allows you to search and read about youur favourite movies.</p>
 			</a>
 			<p><a href="https://github.com/aolamide/movie-search-app" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
 		</div>
 		<div class="work">
-			<a href="" target="_blank">
-				<img src="img/works/personal-site.PNG" alt="personal site" class="work-image">
+			<a href="#" target="_blank">
+				<img src="img/works/portfolio.PNG" alt="personal site" class="work-image">
 				<h2 class="work-title">PERSONAL WEBSITE</h2>
-				<p class="work-description">I made this personal website from scratch with HTML, CSS and Vanilla JavaScipt. The contact form is powered by NodeJS and uses Nodemailer to send automatic confirmation mails.
+				<p class="work-description">I made this personal website from scratch with HTML, CSS and Vanilla JavaScipt. The contact form is powered by NodeJS. 
 				</p>
 			</a>
-			<p><a href="https://github.com/aolamide/number-game" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
+			<p><a href="https://github.com/aolamide/aolamide.github.io" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
+		</div>
+		<div class="work">
+			<a href="https://tunkunmi.com" target="_blank">
+				<img src="img/works/tk.PNG" alt="tk site" class="work-image">
+				<h2 class="work-title">tunkunmi.com</h2>
+				<p class="work-description">Graphics designer portfolio. Built from scratch with HTML, CSS and Vanilla JavaScipt.  
+				</p>
+			</a>
+			<p><a href="https://github.com/aolamide/tunkunmi-portfolio" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
 		</div>
 		<div class="work">
 			<a href="https://aolamide.github.io/number-game" target="_blank">
 				<img src="img/works/number-game.PNG" alt="number-game" class="work-image">
 				<h2 class="work-title">NUMBER GAME</h2>
-				<p class="work-description">Number Game (or Dead and Wounded) is a game I created with vanilla JavaScipt. Can you guess correctly the Computer's Number?</p>
+				<p class="work-description">Number Game (or Dead and Wounded) is a game I created with vanilla JavaScipt. Can you correctly guess the winning number?</p>
 			</a>
 			<p><a href="https://github.com/aolamide/number-game" target="_blank"><i class="fab fa-2x fa-github"></i></a></p>
 		</div>
@@ -155,7 +167,7 @@
 		<div class="form">
 			<div class="f1">
 				<div class="form-group">
-					<label for="name">NAME :</label>
+					<label for="name">NAME/ORGANISATION :</label>
 					<input class="input" type="text" id="name">
 				</div>
 				<div class="form-group">
@@ -177,7 +189,7 @@
 	</section>
 	<footer class="footer">
 		<div class="main-footer">
-			<p style="font-style:italic; font-size:1.2rem">Designed and coded with &hearts; by Olamide himself</p>
+			<p style="font-style:italic; font-size:1.2rem">Designed and developed with &hearts; by Olamide</p>
 			<p>
 				<a href="https://linkedin.com/in/aolamide" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
 				<a href="https://instagram.com/aboyejiolamide" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
@@ -185,17 +197,17 @@
 				<a href="https://twitter.com/olamideaboyeji" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
 			</p>
 			<div class="contacts">
-				<div><i class="fas fa-map-marker-alt"></i><span>University of Lagos, Nigeria</span></div>
+				<div><i class="fas fa-map-marker-alt"></i><span>Lagos, Nigeria</span></div>
 				<div><i class="fas fa-envelope-open"></i><span>me@aolamide.tech</span></div>
 			</div>
 		</div>
-		<div class="copyright">&copy;<span id="year"></span> ABOYEJI OLAMIDE</div>
+		<div class="copyright">&copy;<span id="year"></span> OLAMIDE ABOYEJI</div>
 	</footer>
 	<script>
 		document.getElementById("year").innerText = new Date().getFullYear();
 	</script>
 	<script src="js/site.js"></script>
-	<script src="js/skills.js"></script>
 	<script src="js/contact.js"></script>
+	<script src="js/particles.js"></script>
 </body>
 </html>

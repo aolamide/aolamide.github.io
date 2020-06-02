@@ -1,11 +1,27 @@
+:root {
+	--sec-color : #fff;
+	--bg-color : #fff;
+	--text-color : #5518ab;
+}
+
+[data-theme="dark"] {
+	--sec-color : #141f2d;
+	--bg-color : #1a2634;
+	--text-color : #bfabdcf7;
+}
+
 body, html{
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	color: #5518ab;
-	box-sizing: border-box;
+	color: var(--text-color);
+	box-sizing: border-box;	
 	scroll-behavior : smooth;
-	font-family : 'Josefin Sans'
+	font-family : 'Josefin Sans';
+}
+body {
+	background-color: var(--bg-color);
+	transition: all .5s;
 }
 textarea, input, button {
 font-family: inherit;
@@ -17,12 +33,22 @@ a{
 	text-decoration: none;
 	color: inherit
 }
+/* THEME */
+.theme-btn {
+	position: fixed; 
+	right: 20px; 
+	bottom: 20px;
+	background-color: var(--sec-color);
+	border: 0;
+	box-shadow: 1px 1px 1px #222, -1px -1px 1px #222;
+	padding: 3px;
+}
 /*NAVBAR STARTS*/
 nav{
 	position: fixed;
 	top:0;
 	width: 100%;
-	background-color: white;
+	background-color: var(--bg-color);
 	overflow: hidden;
 	text-align: center;
 	z-index: 20;
@@ -45,7 +71,8 @@ nav a{
 	display: none;
 }
 .newNav{
-	border-bottom: 2px solid #2222ff; 
+	background-color: var(--sec-color);
+	box-shadow: 1px 1px 1px rgb(170, 169, 169);
 }
 .navbarDrop{
 	border-bottom: 1px solid blue;
@@ -78,8 +105,9 @@ nav a{
 }
 
 .h-img{
-	width: 320px;
-	height: 320px;
+	width: 360px;
+	height: auto;
+	max-height: 360px;
 	border-radius: 50%;
 }
 .sc-1, .sc-2{
@@ -89,10 +117,10 @@ nav a{
 	text-align: center;
 }
 .sc-1{
-	margin-top: 15vh;
+	margin-top: 10vh;
 }
 .sc-2 > h1{
-	font-size: 1.5em;
+	font-size: 2.4em;
 }
 .animation{
 	transition: all 3s;
@@ -107,7 +135,7 @@ nav a{
 	padding-right: 5px;
 	z-index: 1;
 	position: relative;
-	color: #5518aa;
+	color: var(--text-color);
 }
 canvas {
 	position: fixed;
@@ -123,13 +151,7 @@ canvas {
 
 /* ABOUT */
 .about-section{
-	/* background-color: white; */
 	min-height: 100vh;
-}
-.about-section h1{
-	text-align: center;
-	letter-spacing: 10px;
-	font-size: 5vw;
 }
 .about-container{
 	display: flex;
@@ -142,69 +164,47 @@ canvas {
 	font-size: 1.5rem;
 	padding-left: 50px;
 }
-.prog-container{
-	display: flex;
-}
-.progress{
-	background-color: burlywood;
-	height: 30px;
-	margin-bottom: 10px;
-	width: 80vw;
-	border-radius: 16px;
-	margin-bottom: 40px;
-}
 #skills{
-	width: 80vw;
+	width: 100vw;
 	margin: auto;
 }
-#skills p, #works > p{
+#skills > p, #works > p, #about > p{
 	text-align: center;
-	/* font-family: "ubuntu", sans-serif; */
 	font-weight: bolder;
 	font-size: 1.5rem;
 }
-.p90{
-	width: 90%;
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
-.p75{
-	width: 75%;
+.skill {
+	padding: 15px;
+	margin: 8px;
+	background-color: var(--sec-color);
+	box-shadow: 1px 1px 1px #222, -1px -1px 1px #222;
 }
-.p65 {
-	width : 65%;
+.skill img {
+	width : 90px;
+	height: 90px;
 }
-.p60{
-	width: 60%;
-}
-.p40{
-	width: 40%;
-}
-.p-bar{
-	background-color: #5518aa;
-	height: 30px;
-	width: 0%;
-	border-radius: 16px;
+.skill-text {
+	display: block;
 	text-align: center;
-	color: white;
-}
-.skill-img{
-	height: 40px;
-	width: 50px;
-	background-color: white;
-	padding-right: 8px;
+	font-weight: bold;
 }
 /* WORKS */
 .works{
 	display: flex;
 	flex-wrap: wrap;
 	min-height: 95vh;
-	margin: 50px;
+	margin-top: 50px;
 	justify-content: center;
-	color: white;
 }
 .work{
 	border-radius: 10px;
 	width: 300px;
-	margin: 18px;
+	margin: 9px;
 	background-color: #424b80;
 	color:#c6c8dc;
 	box-shadow: 2px 2px 2px #777, -2px -2px 2px #777;
@@ -214,7 +214,6 @@ canvas {
 }
 .work h2{
 	padding: 8px;
-	/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
 }
 .work p{
 	padding: 10px;
@@ -224,12 +223,11 @@ canvas {
 }
 #works > p{
 	width: 100%;
-	color: #5518ab;
 	margin: 10px;
 }
 .work-image{
 	width: 100%;
-	height: 220px;
+	height: auto;
 	border-radius: 10px 10px 0 0;
 }
 @media screen and (max-width : 590px){
@@ -237,8 +235,11 @@ canvas {
 		display: block;
 	}
 	.work{
-		width: 100%;
-		margin: 18px auto;
+		width: 75vw;
+		margin: 9px auto;
+	}
+	.sc-2 > h1{
+		font-size: 1.8em;
 	}
 }
 /* CONTACT SECTION */
@@ -274,7 +275,9 @@ canvas {
 	box-sizing: border-box;
 }
 label{
+	display: block;
 	font-weight: bolder;
+	margin-bottom: 10px;
 }
 .input {
 	box-sizing: border-box;
@@ -408,7 +411,8 @@ button:hover{
 	}
 	.about-text{
 		padding : 10px;
-		font-size: 16px;
+		line-height: 22px;
+		font-size: 20px;
 	}
 	.p-bar, .progress{
 		height: 20px;
