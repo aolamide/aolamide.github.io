@@ -403,7 +403,11 @@ button:hover{
   }
   .navbar a:hover{
 	border: none;
-  }
+	}
+	.h-img{
+		width: 290px;
+		height: 290px;
+	}
 }
 @media screen and (max-width: 850px){
 	.about-container{
