@@ -354,7 +354,7 @@ button:hover{
 
 /* FOOTER */
 .footer{
-	border-top: 4px solid blanchedalmond;
+	border-top: 1px solid blanchedalmond;
 }
 .main-footer{
 	text-align: center;
@@ -362,8 +362,9 @@ button:hover{
 .copyright{
 	font-style: italic;
 	padding: 2px 12px;
-	background-color: blanchedalmond;
+	background-color: var(--sec-color);
 	font-weight: bold;
+	color: var(--text-color);
 }
 .contacts{
 	display: flex;
