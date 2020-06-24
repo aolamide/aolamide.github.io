@@ -25,6 +25,11 @@ const resize = () => {
 	}
 }
 window.onresize = resize;
+//when nav is open, and anywhere is clicked, close nav
+window.addEventListener('click', e => {
+  if(!e.target.classList.contains('fa-bars') && !e.target.classList.contains('icon')) closeNav();
+  return;
+});
 navButton.addEventListener("click", toggleNav);
 //close dropdown when link is clicked on mobile
 function closeNav() {
