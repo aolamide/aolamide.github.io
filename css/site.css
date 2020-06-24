@@ -90,7 +90,8 @@ nav a{
 	text-align: left;
 }
 .navbarDrop .right a:hover{
-	background-color:blue; 
+	color : var(--bg-color);
+	background-color: var(--text-color)
 }
 .nav-header{
 	font-weight: 900;
@@ -238,7 +239,7 @@ canvas {
 		display: block;
 	}
 	.work{
-		width: 75vw;
+		width: 85vw;
 		margin: 9px auto;
 	}
 	.sc-2 > h1{
