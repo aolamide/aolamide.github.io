@@ -109,10 +109,11 @@ nav a{
 }
 
 .h-img{
-	width: 360px;
+	width: 380px;
 	height: auto;
-	max-height: 360px;
+	max-height: 380px;
 	border-radius: 50%;
+	box-shadow: 2px 2px 8px #555, -2px -2px 8px #555;
 }
 .sc-1, .sc-2{
 	margin-right: auto;
@@ -406,8 +407,8 @@ button:hover{
 	border: none;
 	}
 	.h-img{
-		width: 290px;
-		height: 290px;
+		width: 300px;
+		height: auto;
 	}
 }
 @media screen and (max-width: 850px){
