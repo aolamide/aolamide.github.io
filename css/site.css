@@ -232,7 +232,7 @@ canvas {
 }
 .work-image{
 	width: 100%;
-	height: auto;
+	height: 200px;
 	border-radius: 10px 10px 0 0;
 }
 @media screen and (max-width : 590px){
