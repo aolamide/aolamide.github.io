@@ -2,10 +2,11 @@ const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const messageInput = document.getElementById("message");
 const validation = document.getElementById("validation");
+const error = document.getElementById("error");
 const submit = document.getElementById("submit");
 
 function formValidation(){
-    if(!nameInput.value || !messageInput.value) {
+    if(!nameInput.value.trim() || !messageInput.value.trim()) {
         return false;
     }else if(!(/(\S+)(@)(\S+)([.])(\S+)/.test(emailInput.value))){
         return false;
@@ -14,8 +15,10 @@ function formValidation(){
 }
 
 function formSubmission(){
+    error.innerText = '';
+    validation.innerText = '';
     if(!formValidation()) {
-        validation.innerText = "Please fill all fields and make sure a correct email is entered";
+        error.innerText = "Please fill all fields and make sure a valid email is entered";
         return;
     }
     submit.innerHTML = "<div class='loader'></div>";
@@ -32,15 +35,18 @@ function formSubmission(){
     .then(res => res.json())
     .then(result => {
         validation.innerText = result;
-    })
-    .then(() => {
-        submit.innerHTML = 'SEND <i class="fas fa-paper-plane"></i>';
-        submit.disabled = false;
         nameInput.value = "";
         emailInput.value = "";
-        messageInput.value = "" 
+        messageInput.value = ""
     })
-    
+    .catch(err => {
+        console.log(err)
+        error.innerText = 'Network error, please retry.'
+    })
+    .finally(() => {
+        submit.innerHTML = 'SEND <i class="fas fa-paper-plane"></i>';
+        submit.disabled = false;
+    })
 }
 
 submit.addEventListener('click', formSubmission);
