@@ -2,12 +2,14 @@
 	--sec-color : #fff;
 	--bg-color : #fff;
 	--text-color : #5518ab;
+	--other-color : #4c4c4c;
 }
 
 [data-theme="dark"] {
 	--sec-color : #141f2d;
 	--bg-color : #1a2634;
 	--text-color : #bfabdcf7;
+	--other-color : #e8e8e8;
 }
 
 body, html{
@@ -115,17 +117,31 @@ nav a{
 	border-radius: 50%;
 	box-shadow: 2px 2px 8px #555, -2px -2px 8px #555;
 }
-.sc-1, .sc-2{
-	margin-right: auto;
-	margin-left: auto;
-	width: auto;
+
+.sc-2 {
+	margin-top : 24vh;
 	text-align: center;
 }
-.sc-1{
-	margin-top: 10vh;
-}
 .sc-2 > h1{
-	font-size: 2.4em;
+	font-size: 6rem;
+	margin : 9px
+}
+#myTitle {
+	color : var(--other-color)
+}
+.arrow {
+	position: absolute;
+	width : calc(100% - 30px);
+	bottom: 45px;
+	text-align: center;
+}
+.arrow i {
+	color : var(--other-color)
+}
+.sc-2 > p{
+	font-size: 1.5rem;
+	margin : 2px;
+	margin-bottom: 30px;
 }
 .animation{
 	transition: all 3s;
@@ -137,7 +153,7 @@ nav a{
 	transform: translateX(1000px);
 }
 .social-link{
-	padding-right: 5px;
+	padding-right: 20px;
 	z-index: 1;
 	position: relative;
 	color: var(--text-color);
@@ -157,6 +173,7 @@ canvas {
 /* ABOUT */
 .about-section{
 	min-height: 100vh;
+	padding-top: 60px;
 }
 .about-container{
 	display: flex;
@@ -203,7 +220,8 @@ canvas {
 	display: flex;
 	flex-wrap: wrap;
 	min-height: 95vh;
-	margin-top: 50px;
+	padding-top : 65px;
+	/* margin-top: 50px; */
 	justify-content: center;
 }
 .work{
@@ -243,14 +261,23 @@ canvas {
 		width: 85vw;
 		margin: 9px auto;
 	}
+	.sc-2 {
+		margin-top : 20vh;
+	}
 	.sc-2 > h1{
-		font-size: 1.8em;
+		font-size: 3.2em;
+		margin-bottom : 20px
+	}
+}
+@media (max-width : 410px) {
+	.sc-2 > h1{
+		font-size: 2.7em;
 	}
 }
 /* CONTACT SECTION */
 .contact-section{
 	padding: 25px;
-	margin-top: 50px;
+	padding-top: 50px;
 }
 .contact-section h2{
 	text-align: center;
@@ -301,13 +328,18 @@ label{
 	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
+#error {
+	color : red;
+	text-align: center;
+}
 button#submit{
-	padding: 12px;
-	border-radius: 8px;
+	padding: 18px;
+	border-radius: 2px 18px 2px 18px;
 	width: inherit;
 	font-weight: bold;
 	background-color: #5518aa;
 	color: #fff;
+	border : none
 }
 .submit{
 	margin: auto;
@@ -320,9 +352,9 @@ button:hover{
 	cursor: pointer;
 }
 .loader {
-	border: 8px solid #f3f3f3;
+	border: 8px solid #5518aa;
 	border-radius: 50%;
-	border-top: 8px solid orange;
+	border-top: 8px solid #f3f3f3;
 	width: 10px;
 	height: 10px;
 	-webkit-animation: spin 2s linear infinite;
