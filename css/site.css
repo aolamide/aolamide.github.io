@@ -175,8 +175,8 @@ canvas {
 
 /* ABOUT */
 .about-section {
-  min-height: 100vh;
-  padding-top: 60px;
+  /*min-height: 100vh;*/
+  padding: 60px 0;
 }
 .about-container {
   display: flex;
@@ -282,7 +282,6 @@ canvas {
 /* CONTACT SECTION */
 .contact-section {
   padding: 25px;
-  padding-top: 50px;
 }
 .contact-section h2 {
   text-align: center;
@@ -323,7 +322,7 @@ label {
   font-size: 14px;
   line-height: 1.42857143;
   color: black;
-  background-color: #ccc;
+  background-color: #eee;
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
