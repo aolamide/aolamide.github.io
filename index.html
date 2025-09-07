@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Olamide Aboyeji is a Full Stack Web Developer. I'm passionate about all things tech and helping people. Let's get in touch. Drop a message for me or follow my socials.">
-	<meta name="og:title" content="Olamide Aboyej">
-	<meta property="og:image" content="https://aolamide.tech/img/header2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Olamide Aboyeji is a Software Engineer. I am passionate about all things tech and helping people. Let's get in touch. Drop a message for me or follow my socials.">
+	<meta name="og:title" content="Olamide Aboyeji">
+	<meta property="og:image" content="https://aolamide.tech/img/olamide.jpeg">
 	<meta name="twitter:card" content="summary" />
 	<meta name="og:type" content="website">
 	<meta name="twitter:site" content="@olamideaboyeji">
 	<meta name="twitter:title" content="Olamide Aboyeji">
-	<meta name="twitter:image" content="https://aolamide.tech/img/header2.png">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/site.css">
-	<link rel="shortcut icon" href="img/ico.ico" type="image/x-icon" />
-	<link href="https://fonts.googleapis.com/css2?family=Coiny&family=Josefin+Sans&family=Lobster" rel="stylesheet">
-	<title>Olamide Aboyeji</title>
-	<!-- Google tag (gtag.js) -->
+	<meta name="twitter:image" content="https://aolamide.tech/img/olamide.jpeg">
+    <title>Olamide Aboyeji - Software Engineer</title>
+    <link rel="shortcut icon" href="img/ico.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/output.css">
+    <!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-B0XFZ8WLT9"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -24,178 +25,509 @@
 	
 	  gtag('config', 'G-B0XFZ8WLT9');
 	</script>
-	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 </head>
-<body id="body">
-	<nav class="navbar" id="navbar">
-		<a class="left nav-header" href="#navbar">OLAMIDE</a>
-		<div class="right">
-			<a href="#home">/home</a>
-			<a href="#about">/about</a>
-<!--			<a href="#works">/works</a>-->
-			<a href="#contact">/contact me</a>
-		</div>
-		<button class="theme-btn light-btn" title="Switch to Dark Mode">
-			<img src="img/moon.svg" alt="switch to dark mode">
-		</button>
-		<button class="theme-btn dark-btn" title="Switch to Light Mode">
-			<img src="img/sun.svg" alt="switch to light mode">
-		</button>
-		<a class="icon" id="toggleNav" href="javascript:void(0)"><i id="toggle-icon" class="fa fa-bars"></i></a>
-	</nav>
-	<div id="particles-js"></div>
-	<section id="home" class="welcome-section">
-		<div class="sc-2">
-			<h1 class="animation from-left" id="myName">Hi, I'm Olamide</h1>
-			<p class="animation from-right" id="myTitle">Full stack Developer | Full time happy boy</p>
-			<div id="socials" class="animation from-left ">
-				<a href="https://linkedin.com/in/aolamide" target="_blank"><i class="social-link fab fa-2x fa-linkedin"></i></a>
-				<a href="https://twitter.com/olamideaboyeji" target="_blank"><i class="social-link fab fa-2x fa-twitter"></i></a>
-				<a href="https://github.com/aolamide" target="_blank"><i class="social-link fab fa-2x fa-github"></i></a>
-				<a href="https://dev.to/olamideaboyeji" target="_blank"><i class="social-link fab fa-2x fa-dev"></i></a>
-				<a href="mailto:me@aolamide.tech"><i class="social-link fa fa-2x fa-envelope"></i></a>
-			</div>
-		</div>
-		<div class="arrow">
-			<a title="Let's dive in" href="#about"><i class="fa fa-angle-double-down fa-3x"></i></a>
-		</div>
-	</section>
-	<section id="about" class="about-section">
-		<p>ABOUT ME</p>
-		<div class="about-container">
-			<div class="about-text">  
-				<p>*clears throat*</p>
-				<p>
-					I am a full stack developer with experience in building web applications - both client side and server side applications. I work mainly with the technologies listed below and I am always looking to learn and improve every day.
-				</p>
-				<p>
-					In my free time,  I like to play games, watch football (Manchester United <span style="font-size:1.5rem">&hearts;</span>), watch movies and series, meet people, volunteer and just have fun!
-				</p>
-				<p>You can learn more about me by clicking on the links to my socials above.</p>
-				<p>I am currently open to opportunities in the web development field. Have an idea you want me to work on? Leave a message for me in the contact form below.</p>
-			</div>	
-		</div>
-		<div id="skills">
-			<p>MY SKILLS</p>
-			<p>Some technologies I work with</p>
-			<div class="skills">
-				<div class="skill">
-					<img src="img/skills/js.svg" alt="javascript">
-					<span class="skill-text">Javascript</span>
-				</div>
-				<div class="skill">
-					<img src="img/skills/node.svg" alt="nodejs">
-					<span class="skill-text">NodeJS</span>
-				</div>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold text-primary">Olamide Aboyeji</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-accent transition-colors">Home</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-accent transition-colors">About</a>
+                    <a href="#experience" class="nav-link text-gray-600 hover:text-accent transition-colors">Experience</a>
+                    <a href="#projects" class="nav-link text-gray-600 hover:text-accent transition-colors">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-accent transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-600" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden mt-4 hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-accent transition-colors">Home</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-accent transition-colors">About</a>
+                    <a href="#experience" class="nav-link text-gray-600 hover:text-accent transition-colors">Experience</a>
+                    <a href="#projects" class="nav-link text-gray-600 hover:text-accent transition-colors">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-accent transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-				<div class="skill">
-					<img src="img/skills/php.svg" alt="php">
-					<span class="skill-text">PHP</span>
-				</div>
-				<div class="skill">
-					<img src="img/skills/mysql.svg" alt="mysql">
-					<span class="skill-text">MySQL</span>
-				</div>
-				<div class="skill">
-					<img src="img/skills/mongo.svg" alt="mongodb">
-					<span class="skill-text">MongoDB</span>
-				</div>
-				<div class="skill">
-					<img src="img/skills/docker.svg" alt="docker">
-					<span class="skill-text">Docker</span>
-				</div>
-				<div class="skill">
-					<img src="img/skills/kubernetes.svg" alt="Kubernetes">
-					<span class="skill-text">Kubernetes</span>
-				</div>
-				<div class="skill">
-					<img src="img/skills/nestjs.svg" alt="nestjs">
-					<span class="skill-text">NestJs</span>
-				</div>
-				<div class="skill">
-					<img src="img/skills/graphql.svg" alt="GraphQL">
-					<span class="skill-text">GraphQL</span>
-				</div>
-				<div class="skill">
-					<img src="img/skills/html.svg" alt="html">
-					<span class="skill-text">HTML5</span>
-				</div>
-				<div class="skill">
-					<img src="img/skills/tailwind.svg" alt="tailwindcss">
-					<span class="skill-text">TailwindCSS</span>
-				</div>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-secondary to-gray-800 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="animate-fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                   <span id="hero-name-intro"></span> <span id="hero-name" class="text-accent-light"></span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                    Backend Engineer specializing in scalable APIs, microservices, and high-performance systems
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#contact" class="bg-accent hover:bg-accent-light px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Get In Touch
+                    </a>
+                    <a href="#about" class="border-2 border-white hover:bg-white hover:text-primary px-8 py-4 rounded-full font-semibold transition-all duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Animated background elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-accent rounded-full animate-ping"></div>
+            <div class="absolute top-3/4 right-1/4 w-3 h-3 bg-accent-light rounded-full animate-pulse"></div>
+            <div class="absolute bottom-1/4 left-1/3 w-1 h-1 bg-white rounded-full animate-bounce"></div>
+        </div>
+    </section>
 
-				<div class="skill">
-					<img src="img/skills/react.svg" alt="react">
-					<span class="skill-text">React</span>
-				</div>
-				<div class="skill">
-					<img src="img/skills/next.svg" alt="next.js">
-					<span class="skill-text">Next.js</span>
-				</div>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-16 text-primary">About Me</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            I am a passionate Sofware Engineer with years of experience building scalable, high-performance systems. Currently at AfriHealth, I focus on developing robust APIs for clinical workflows and optimizing system performance.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Previously at Konga Nigeria, I led teams in building microservices that power one of Nigeria's largest e-commerce platforms, handling thousands of transactions and users daily.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">NestJS</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">PHP</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">TypeScript</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">PostgreSQL</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Redis</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Docker</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">AWS</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Kubernetes</span>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="bg-gradient-to-r from-accent/5 to-accent-light/5 p-6 rounded-xl">
+                            <h3 class="font-semibold text-primary mb-3">Education</h3>
+                            <p class="text-gray-700">B.Sc. Electrical & Electronics Engineering</p>
+                            <p class="text-sm text-gray-600">University of Lagos</p>
+                        </div>
+                        <div class="bg-gradient-to-r from-accent/5 to-accent-light/5 p-6 rounded-xl">
+                            <h3 class="font-semibold text-primary mb-3">Quick Stats</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <p class="text-2xl font-bold text-accent">5+</p>
+                                    <p class="text-sm text-gray-600">Years Experience</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-accent">10+</p>
+                                    <p class="text-sm text-gray-600">Projects Led</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-accent">20+</p>
+                                    <p class="text-sm text-gray-600">Microservices Built</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-accent">5+</p>
+                                    <p class="text-sm text-gray-600">Languages Written</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<div class="skill">
-					<img src="img/skills/github.svg" alt="github">
-					<span class="skill-text">Git/GitHub</span>
-				</div>
-				<div class="skill">
-					<img src="img/skills/azure.svg" alt="azure">
-					<span class="skill-text">Azure</span>
-				</div>
-				<div class="skill">
-					<img src="img/skills/heroku.svg" alt="heroku">
-					<span class="skill-text">Heroku</span>
-				</div>
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary">Recent Experiences</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-12">
+                    <!-- AFRIHEALTH -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-primary">Software Engineer</h3>
+                                <p class="text-accent font-semibold"> <a target="_blank" class="hover:underline" href="http://afri-health.com">AfriHealth</a></p>
+                            </div>
+                            <div class="text-gray-600">
+                                <p>Feb 2025 – Present</p>
+                                <p class="text-sm">Lagos, Nigeria (Remote)</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                Built and maintained scalable backend APIs for clinical workflows in the Hydra EMR system
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                Optimized API performance, reducing response time by 35% through PostgreSQL indexing and Redis caching
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                Streamlined frontend-backend integration with reusable API services and data transformation utilities
+                            </li>
+                        </ul>
+                    </div>
 
-			</div>
-	</section>
+                    <!-- Konga -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-primary">Software Engineer</h3>
+                                <p class="text-accent font-semibold"> <a target="_blank" class="hover:underline" href="http://konga.com">Konga Nigeria</a> </p>
+                            </div>
+                            <div class="text-gray-600">
+                                <p>Apr 2022 – Feb 2025</p>
+                                <p class="text-sm">Lagos, Nigeria (Hybrid)</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                Maintained multiple microservices using Node.js, PHP, GraphQL, and integrated RabbitMQ for event-driven communication
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                Led backend team building affiliate marketing platform supporting 1,000+ affiliates
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                Built custom internal npm packages, reducing development time by 30% across 5+ teams
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                Upgraded legacy microservices from Node.js v7 to v18, reducing build errors by 90%
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section id="contact" class="contact-section">
-		<h2>Let's Talk</h2>
-		<div class="form">
-			<div class="f1">
-				<div class="form-group">
-					<label for="name">NAME/ORGANISATION :</label>
-					<input class="input" type="text" id="name">
-				</div>
-				<div class="form-group">
-					<label for="email">EMAIL :</label>
-					<input class="input" type="text" id="email">
-				</div>
-			</div>
-			<div class="f2">
-				<div class="form-group">
-					<label for="message">MESSAGE :</label>
-					<textarea rows="10" class="input" id="message"></textarea>
-				</div>
-			</div>
-		</div>
-		<div class="submit">
-			 <button id="submit"> SEND <i class="fas fa-paper-plane"></i></button> 
-		</div>	
-		<p id="validation"></p>
-		<p id="error"></p>
-	</section>
-	<footer class="footer">
-		<div class="main-footer">
-			<p style="font-style:italic; font-size:1.2rem">Developed with &hearts; by Olamide Aboyeji</p>
-			<p>
-				<a href="https://linkedin.com/in/aolamide" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
-				<a href="https://dev.to/olamideaboyeji" target="_blank"><i class="fab fa-2x fa-dev"></i></a>
-				<a href="https://github.com/aolamide" target="_blank"><i class="fab fa-2x fa-github"></i></a>
-				<a href="https://twitter.com/olamideaboyeji" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
-			</p>
-			<div class="contacts">
-				<div><i class="fas fa-envelope-open"></i><span>me@aolamide.tech</span></div>
-			</div>
-		</div>
-		<div class="copyright">&copy;<span id="year"></span> OLAMIDE ABOYEJI</div>
-	</footer>
-	<script>
-		document.getElementById("year").innerText = new Date().getFullYear();
-	</script>
-	<script src="js/site.js"></script>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary">Featured Projects</h2>
+            <div class="max-w-7xl mx-auto">
+                <div class="space-y-16">
+
+                    <!-- TEEP Project -->
+                    <div class="bg-gradient-to-r from-purple-500/5 to-pink-500/5 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-3xl font-bold text-primary mb-4">TEEP</h3>
+                                <p class="text-lg text-gray-700 mb-6">
+                                    A comprehensive bill payment application that simplifies utility payments, mobile recharges, 
+                                    and financial transactions with a user-friendly interface and secure payment processing.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                                    <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">Express.js</span>
+                                    <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                                    <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">Payment Processing</span>
+                                    <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">Secure Auth</span>
+                                    <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">Redis</span>
+                                </div>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300">
+                                        <i class="fas fa-external-link-alt mr-2"></i>View Project
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <div class="bg-[url('../img/teep.png')] bg-cover bg-center rounded-lg p-8 text-white shadow-xl relative">
+                                    <div class="absolute inset-0 bg-black/80 rounded-lg"></div>
+                                    <div class="text-center relative z-10">
+                                        <i class="fas fa-credit-card text-6xl mb-4"></i>
+                                        <h4 class="text-xl font-bold mb-2">Bill Payment Solution</h4>
+                                        <p>Secure and efficient bill payment processing with multiple service integrations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Unscrambla Project -->
+                    <div class="bg-gradient-to-r from-accent/5 to-accent-light/5 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div class="md:order-2">
+                                <h3 class="text-3xl font-bold text-primary mb-4">Unscrambla</h3>
+                                <p class="text-lg text-gray-700 mb-6">
+                                    A live multiplayer word game built with modern web technologies. Features real-time gameplay, 
+                                    user authentication, and competitive scoring system.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">React.js</span>
+                                    <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                                    <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">WebSockets</span>
+                                    <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">MongoDB</span>
+                                </div>
+                                <div class="flex space-x-4">
+                                    <a target="_blank" href="https://unscrambla.aolamide.tech" class="bg-accent hover:bg-accent-light text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300">
+                                        <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                                    </a>
+                                    <a target="_blank" href="https://github.com/aolamide/unscrambla" class="border-2 border-accent text-accent hover:bg-accent hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300">
+                                        <i class="fab fa-github mr-2"></i>View Code
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <div class="bg-[url('../img/unscrambla.png')] bg-cover bg-center rounded-lg p-8 text-white shadow-xl relative">
+                                    <div class="absolute inset-0 bg-black/80 rounded-lg"></div>
+                                    <div class="text-center relative z-10">
+                                        <i class="fas fa-gamepad text-6xl mb-4"></i>
+                                        <h4 class="text-xl font-bold mb-2">Multiplayer Gaming</h4>
+                                        <p>Real-time word scramble game with live chat and leaderboards</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Konga Affiliates Project -->
+                    <div class="bg-gradient-to-r from-green-500/5 to-emerald-500/5 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-3xl font-bold text-primary mb-4">Konga Affiliates Platform</h3>
+                                <p class="text-lg text-gray-700 mb-6">
+                                    Led the development of Konga's affiliate marketing platform, enabling 1,000+ affiliates 
+                                    to earn commissions and significantly increasing referral traffic to the platform.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">NestJS</span>
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">TypeScript</span>
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Redis</span>
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">RabbitMQ</span>
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Docker</span>
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Kubernetes</span>
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Azure</span>
+                                </div>
+                                <div class="flex space-x-4">
+                                    <a target="_blank" href="https://affiliate.konga.com/" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300">
+                                        <i class="fas fa-external-link-alt mr-2"></i>View Project
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="relative md:order-1">
+                                <div class="bg-[url('../img/affiliate.png')] bg-cover bg-center rounded-lg p-8 text-white shadow-xl relative">
+                                    <div class="absolute inset-0 bg-black/80 rounded-lg"></div>
+                                    <div class="text-center relative z-10">
+                                        <i class="fas fa-users text-6xl mb-4"></i>
+                                        <h4 class="text-xl font-bold mb-2">Affiliate Management</h4>
+                                        <p>Scalable platform managing 1,000+ affiliates with commission tracking</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary">Technical Skills</h2>
+            <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-code text-4xl text-accent mb-3"></i>
+                        <h3 class="text-xl font-bold text-primary">Development</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Node.js & TypeScript</li>
+                        <li>• PHP (Magento, Laravel, Yii, Phalcon)</li>
+                        <li>• NestJS Framework</li>
+                        <li>• RESTful & GraphQL APIs</li>
+                        <li>• React.js & Next.js</li>
+                        <li>• Microservices Architecture</li>
+                    </ul>
+                </div>
+
+
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-database text-4xl text-accent mb-3"></i>
+                        <h3 class="text-xl font-bold text-primary">Databases</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• MySQL </li>
+                        <li>• PostgreSQL</li>
+                        <li>• MongoDB</li>
+                        <li>• Redis</li>
+                        <li>• Database Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-cloud text-4xl text-accent mb-3"></i>
+                        <h3 class="text-xl font-bold text-primary">DevOps & Cloud</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Docker & Kubernetes</li>
+                        <li>• AWS, Azure, GCP</li>
+                        <li>• CI/CD Pipelines</li>
+                        <li>• Message Queues (Kafka, RabbitMQ)</li>
+                        <li>• System Monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary">Get In Touch</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-6">Let's Connect</h3>
+                            <p class="text-lg text-gray-700 mb-8">
+                                I am always interested in discussing new opportunities, innovative projects, 
+                                or just having a chat about technology and software engineering.
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-accent/10 p-3 rounded-lg">
+                                    <i class="fas fa-envelope text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-primary">Email</p>
+                                    <a href="mailto:hello@aolamide.tech" class="text-accent hover:text-accent-light transition-colors">
+                                        hello@aolamide.tech
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-accent/10 p-3 rounded-lg">
+                                    <i class="fab fa-x-twitter text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-primary">X</p>
+                                    <a target="_blank" href="https://x.com/olamideaboyeji" class="text-accent hover:text-accent-light transition-colors">
+                                        @olamideaboyeji
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-accent/10 p-3 rounded-lg">
+                                    <i class="fab fa-linkedin text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-primary">LinkedIn</p>
+                                    <a target="_blank" href="https://linkedin.com/in/aolamide" class="text-accent hover:text-accent-light transition-colors">
+                                        Connect with me
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-accent/10 p-3 rounded-lg">
+                                    <i class="fab fa-github text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-primary">GitHub</p>
+                                    <a target="_blank" href="https://github.com/aolamide" class="text-accent hover:text-accent-light transition-colors">
+                                        View my GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-xl p-8">
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" name="name" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" required 
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300"></textarea>
+                            </div>
+                            
+                            <button type="submit" 
+                                    class="w-full bg-accent hover:bg-accent-light text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02] focus:ring-2 focus:ring-accent focus:ring-offset-2">
+                                <span class="button-text">Send Message</span>
+                                <i class="fas fa-spinner fa-spin hidden ml-2" id="loading-spinner"></i>
+                            </button>
+
+                            <p id="form-message" class="text-center mt-4 text-sm"></p>
+                            <p class="text-xs text-gray-400 mt-2">
+                                I respect your privacy. Your information will not be shared.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-lg font-semibold">Olamide Aboyeji</p>
+                    <p class="text-gray-400">Software Engineer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a target="_blank" href="https://linkedin.com/in/aolamide" class="text-gray-400 hover:text-accent-light transition-colors duration-300">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a target="_blank" href="https://github.com/aolamide" class="text-gray-400 hover:text-accent-light transition-colors duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a target="_blank" href="mailto:hello@aolamide.tech" class="text-gray-400 hover:text-accent-light transition-colors duration-300">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                    <a target="_blank" href="https://x.com/olamideaboyeji" class="text-gray-400 hover:text-accent-light transition-colors duration-300">
+                        <i class="fab fa-x-twitter text-xl"></i>
+                    </a>
+                    <a target="_blank" href="https://dev.to/olamideaboyeji" class="text-gray-400 hover:text-accent-light transition-colors duration-300">
+                        <i class="fab fa-dev text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; <span id="current-year"></span> Olamide Aboyeji. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/site.js"></script>
 	<script src="js/contact.js"></script>
-	<script src="js/particles.js"></script>
 </body>
 </html>

@@ -1,92 +1,122 @@
-//NAVBAR BELOW
-const navbar = document.getElementById("navbar");
-const newNavbarPosition = 80;
-const navButton = document.getElementById("toggleNav");
-const x = document.getElementById("navbar");
-const tog_icon = document.getElementById("toggle-icon");
-const changeNavbar = () => {
-  if (window.pageYOffset >= newNavbarPosition ) {
-    navbar.classList.add("newNav")
-  } else {
-    navbar.classList.remove("newNav");
-  }
-}
-window.onscroll = changeNavbar;
-
-const toggleNav = () => {
-  x.classList.toggle("navbarDrop");
-  x.classList.toggle("navbar");
-  tog_icon.classList.toggle("fa-times");
-}
-const resize = () => {
-	if(window.innerWidth >= 600){
-    x.className = "navbar";
-    tog_icon.classList.remove("fa-times");
-	}
-}
-window.onresize = resize;
-//when nav is open, and anywhere is clicked, close nav
-window.addEventListener('click', e => {
-  if(!e.target.classList.contains('fa-bars') && !e.target.classList.contains('icon')) closeNav();
-  return;
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
 });
-navButton.addEventListener("click", toggleNav);
-//close dropdown when link is clicked on mobile
-function closeNav() {
-  if(x.classList.contains("navbarDrop")){
-    toggleNav();
-  }
+
+// Mobile menu toggle
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+    });
+});
+
+// Navbar background on scroll
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 100) {
+        navbar.classList.add('bg-white');
+        navbar.classList.remove('bg-white/90');
+    } else {
+        navbar.classList.add('bg-white/90');
+        navbar.classList.remove('bg-white');
+    }
+});
+
+// Active navigation highlighting
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    let current = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+        }
+    });
+    
+    navLinks.forEach(link => {
+        link.classList.remove('text-accent', 'font-semibold');
+        link.classList.add('text-gray-600');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.remove('text-gray-600');
+            link.classList.add('text-accent', 'font-semibold');
+        }
+    });
+});
+
+// Add scroll animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe all sections for animations
+document.querySelectorAll('section').forEach(section => {
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(20px)';
+    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(section);
+});
+
+// Set home section to be visible immediately
+document.getElementById('home').style.opacity = '1';
+document.getElementById('home').style.transform = 'translateY(0)';
+
+// Set current year in footer
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+// Add typing animation effect for the hero text
+const heroTitle = document.querySelector('#hero-name-intro');
+const heroNameSpan = document.querySelector('#hero-name');
+if (heroTitle) {
+    const text = "Hi, I'm ";
+    const textName = "Olamide";
+    let i = 0;
+    const typeWriter = () => {
+        if (i < text.length) {
+            heroTitle.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50);
+        }
+    };
+    let j = 0;
+    const typeWriterName = () => {
+      if (j < textName.length) {
+        heroNameSpan.innerHTML += textName.charAt(j);
+        j++;
+        setTimeout(typeWriterName, 50);
+      }
+    }
+
+    setTimeout(typeWriter, 1000);
+    setTimeout(typeWriterName, 1000 + text.length * 50);
 }
-//NAVBAR ABOVE
-const body = document.getElementById("body");
-const myName = document.getElementById("myName");
-const myTitle = document.getElementById("myTitle");
-const mySocials = document.getElementById("socials");
-const toPosition = (element) => {
-	element.style.transform = "none";
-}
-
-const socials = ()=>toPosition(mySocials);
-const name = ()=>toPosition(myName);
-const title = ()=>toPosition(myTitle);
-window.onload = setTimeout(name, 1000), setTimeout(title, 3000), setTimeout(socials, 5000);
-
-
-//Dark mode
-const darkBtn = document.querySelector('.dark-btn');
-const lightBtn = document.querySelector('.light-btn');
-
-const showModeButton = mode => {
-  switch (mode) {
-    case 'dark':
-      darkBtn.style.display = 'block';
-      lightBtn.style.display = 'none';
-      break;
-  
-    default:
-      darkBtn.style.display = 'none';
-      lightBtn.style.display = 'block';
-      break;
-  }
-}
-
-let isDark = window.matchMedia('(prefers-color-scheme : dark)').matches;
-let currentMode = isDark ? 'dark' : 'light';
-showModeButton(currentMode);
-document.documentElement.setAttribute('data-theme', currentMode);
-
-const switchMode = () => {
-  if(currentMode === 'light') {
-    currentMode = 'dark';
-    document.documentElement.setAttribute('data-theme', 'dark');
-    showModeButton('dark');
-  }
-  else {
-    currentMode = 'light';
-    document.documentElement.setAttribute('data-theme', 'light');
-    showModeButton('light');
-  }
-}
-
-darkBtn.addEventListener('click', switchMode);
-lightBtn.addEventListener('click', switchMode);

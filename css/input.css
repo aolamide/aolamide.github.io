@@ -1,0 +1,78 @@
+@import 'tailwindcss';
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom scrollbar */
+
+@theme {
+    --color-primary: #0f172a;
+    --color-secondary: #1e293b;
+    --color-accent: #3b82f6;
+    --color-accent-light: #60a5fa;
+    --font-sans: 'Inter', system-ui, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #60a5fa;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced button hover effects */
+button, .btn {
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover, .btn:hover {
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Loading animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fa-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Enhanced card hover effects */
+.shadow-lg {
+    transition: all 0.3s ease;
+}
+
+.shadow-lg:hover {
+    transform: translateY(-5px);
+}
+
+/* Gradient text effect */
+.gradient-text {
+    background: linear-gradient(45deg, #3b82f6, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+} */
