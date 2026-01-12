@@ -39,7 +39,7 @@ function showResultPopup(isSuccess, message) {
     }, 5000);
 }
 
-// Contact form handling (placeholder for your API integration)
+// Contact form handling with reCAPTCHA v3
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -52,14 +52,18 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
     loadingSpinner.classList.remove('hidden');
     submitBtn.disabled = true;
     
-    // Get form data
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value
-    };
-    
     try {
+        // Get reCAPTCHA token
+        const recaptchaToken = await grecaptcha.execute('6LdFl0gsAAAAADTi0evIbvuE_jbAdfwCiQnP3HJC', { action: 'contact_form' });
+        
+        // Get form data
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value,
+            recaptchaToken: recaptchaToken
+        };
+        
         const response = await fetch('https://contact-api.aolamide.tech/send', {
             method: 'POST',
             headers: {
